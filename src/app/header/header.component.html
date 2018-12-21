@@ -1,0 +1,13 @@
+<div class="container" style="padding-top: 10px;">
+  <div class="input-group manualInput searchBar">
+    <input id="address-input" type="text" class="form-control" (required)="true" (keyup)="saveArtistName($event)" placeholder="Enter Artist"/>
+    <span class="input-group-addon">
+      <a><i class="glyphicon glyphicon-search searchButton" (disabled)="true" (click)="getArtistInformation()"></i></a>
+    </span>
+  </div>
+  <ul>
+    <li><a href="./homepage"> Home Screen</a></li>
+    <li><a href="https://www.nextbigsound.com"> NextBigSound</a></li>
+    <li><a href="https://www.pandora.com/"> Pandora</a></li>
+  </ul>
+</div>

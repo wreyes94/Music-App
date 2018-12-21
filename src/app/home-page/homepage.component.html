@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="container">
+  <h2>  Top Current Artists </h2>
+  <div class="row" style="padding-top: 20px;">
+    <div *ngFor="let artist of officialNames" class="col-sm-3">
+      <a href="./artistInfo" (click)="storeClickInfo(artist.name, artist.artistId)"><img src="{{artist.image}}" width="250px" height="250px" alt="test" class="img-responsive imageSize"></a>
+      <div class="carousel-caption">
+        <h3>{{artist.name}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
